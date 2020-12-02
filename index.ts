@@ -1,15 +1,15 @@
 import fs from "fs";
-const day = 1;//(new Date).getDay();
+const day = 2;//(new Date).getDay();
 
-import solve from "./days/1/index";// needs to be dynamic
+import solve from "./days/2/index";// needs to be dynamic
 
-const input: Array<number>  = fs
+const input: Array<any>  = fs
   .readFileSync(`days/`+day+`/input.txt`)
   .toString()
   .split("\n")
   .map((s) => s.replace(/\r$/, ""))
-  .filter((s) => s.length > 0)
-  .map(s=>parseInt(s));
+  .filter((s) => s.length > 0);
+  // .map(s=>parseInt(s));
 
 // const solver = require(`./days/`+day+`/index.js`);
 

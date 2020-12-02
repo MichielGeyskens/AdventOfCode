@@ -1,4 +1,4 @@
-let answer: number[] = [];
+let answer: any[] = [];
 function solve(input: number[]) {
 
   answer.push();
