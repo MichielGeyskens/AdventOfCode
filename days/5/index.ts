@@ -9,7 +9,22 @@ function solve(input: string[]) {
         c = column(el.substring(7, 10))
         answer.push(r*8+c)
     });
-    return Math.max(...answer);
+
+    answer.sort(function(a, b) {
+        return a - b;
+      });
+
+      let prev=answer[0]-1;
+    let anws;
+    answer.forEach(el=>{
+        if(prev+1!=el)
+        anws = prev+1;
+        prev = el;
+
+
+    })
+    return anws
+    // return Math.max(...answer);
 }
 
 
