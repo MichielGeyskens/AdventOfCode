@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "tsc & node index.js"
+    "run": "tsc & node index.js",
+    "run tsc": "tsc"
   },
   "author": "",
   "license": "ISC",

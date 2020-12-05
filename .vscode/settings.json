@@ -1,6 +1,6 @@
 {
     "files.exclude": {
-        "**/*.js": true,
-        ".vscode/":true
+        // "**/*.js": true,
+        // ".vscode/":true
     }
 }
