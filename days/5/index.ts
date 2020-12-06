@@ -2,8 +2,8 @@ let answer: number[] = [];
 let checklist: any[] = new Array(8).fill(false);
 function solve(input: string[]) {
     // console.log(input);
-    let r;//row
-    let c;//colum
+    let r:number;//row
+    let c:number;//colum
     input.forEach(el => {
         r = row(el.substring(0, 7))
         c = column(el.substring(7, 10))
@@ -42,6 +42,7 @@ function row(chars: string) {
     if (min == max)
         return min
     console.error("row error")
+    return 0;
 }
 
 function column(chars: string) {
@@ -58,6 +59,7 @@ function column(chars: string) {
     if (min == max)
         return min
     console.error("colum error")
+    return 0;
 }
 
 export default solve;

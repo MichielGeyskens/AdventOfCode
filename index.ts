@@ -1,7 +1,7 @@
 import fs from "fs";
-const day = 5;//(new Date).getDay();
+const day = 6;//(new Date).getDay();
 
-import solve from "./days/5/index";// needs to be dynamic
+import solve from "./days/6/index";// needs to be dynamic
 
 const input: Array<any>  = fs
   .readFileSync(`days/`+day+`/input.txt`)
